@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AR Resume</title>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- Use a marker (e.g., Hiro marker) for AR tracking -->
+        <a-marker preset="hiro">
+            <!-- Add a link to your resume -->
+            <a-entity position="0 0 0" scale="0.05 0.05 0.05">
+                <a-text value="View My Resume" color="blue" position="-1 0 0" href="https://drive.google.com/file/d/1PgrzLDBkORZarLPX5WfIqpmApeOqXyRW/view?usp=sharing" target="_blank"></a-text>
+            </a-entity>
+        </a-marker>
+        <!-- Add a camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
